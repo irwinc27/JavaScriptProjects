@@ -1,5 +1,7 @@
 //--main
 
+
+//using concat() method
 function full_sentence() {
     var part_1 = "This is ";
     var part_2 = "a sentence ";
@@ -9,17 +11,20 @@ function full_sentence() {
     document.getElementById("Concatenate").innerHTML = whole_sentence;
 }
 
+//using slice() method
 function slice_method() {
     var Sentence = "All work and no play makes Johnny a dull boy.";
     var Section = Sentence.slice (27,33);
     document.getElementById("Slice").innerHTML = Section;
 }
 
+//using toString() method
 function string_method() {
     var X = 125;
     document.getElementById("Numbers_to_string").innerHTML = X.toString();
 }
 
+//using toPrecision() method
 function precision_method() {
     var X = 12362.23429768;
     document.getElementById("Precision").innerHTML = X.toPrecision(10);
